@@ -2,7 +2,6 @@
 
 configuration {
     modi: "drun,run";
-    theme: "catppuccin";
 }
 window {
     background: #1e2030;
