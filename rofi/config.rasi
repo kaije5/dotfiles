@@ -1,0 +1,11 @@
+/* rofi/config.rasi */
+
+configuration {
+    modi: "drun,run";
+    theme: "catppuccin";
+}
+window {
+    background: #1e2030;
+    border-color: #565f89;
+    separatorcolor: #c6d0f5;
+}

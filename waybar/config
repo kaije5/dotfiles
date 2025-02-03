@@ -1,0 +1,18 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "memory", "network", "battery", "pulseaudio"],
+  "clock": {
+      "format": "%a %d %b %R"
+  },
+  "cpu": {
+      "format": "{usage}%",
+      "max_threshold": 80,
+      "min_threshold": 20
+  },
+  "memory": {
+      "format": "{used} / {total}"
+  }
+}
