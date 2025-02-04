@@ -19,11 +19,13 @@ source $HOME/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting z)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
