@@ -1,0 +1,16 @@
+# ~/.config/yazi/keymap.toml
+
+[selection]
+# Toggle selection and enter visual mode
+toggle      = "space"
+visual_mode = "v"
+select_all  = "ctrl+a"
+
+[file_operations]
+# Open, rename, delete, copy, cut, paste commands
+open   = "o"
+rename = "r"
+delete = "d"
+copy   = "y"
+cut    = "x"
+paste  = "p"

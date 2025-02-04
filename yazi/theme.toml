@@ -1,0 +1,30 @@
+# ~/.config/yazi/theme.toml
+
+[colors]
+# General colors
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+accent     = "#f5c2e7"
+
+# Catppuccin Mocha Palette
+rosewater = "#f5e0dc"
+flamingo  = "#f2cdcd"
+pink      = "#f5c2e7"
+mauve     = "#c6a0f6"
+red       = "#f38ba8"
+maroon    = "#eba0ac"
+peach     = "#fab387"
+yellow    = "#f9e2af"
+green     = "#a6e3a1"
+teal      = "#94e2d5"
+sky       = "#89dceb"
+sapphire  = "#74c7ec"
+blue      = "#89b4fa"
+lavender  = "#b4befe"
+
+[syntect]
+# Replace this with the actual path where you saved your Catppuccin Mocha .tmTheme file.
+syntect_theme = "/home/kaije/.config/yazi/themes/Catppuccin-mocha.tmTheme"
+
+[layout]
+# You can add layout customizations here if needed.

@@ -1,0 +1,20 @@
+# ~/.config/yazi/yazi.toml
+
+[manager]
+# Show hidden files in the file manager.
+show_hidden = true
+# Use natural sorting (you can change this to "alphabetical", etc.).
+sort_order = "natural"
+
+[preview]
+# Maximum dimensions for the preview pane.
+max_width  = 1000
+max_height = 1000
+
+[editor]
+# Command used when opening a file from yazi (for example, VS Code).
+command = "code"
+
+[general]
+# Other general settings can be added here.
+theme = "catppuccin-mocha"
