@@ -75,7 +75,7 @@ style             = "bold #cba6f7"
 
 [cmd_duration]
 min_time = 2000  # in milliseconds
-format = "[⏱  $duration]($style) "
+format = "[  $duration]($style) "
 style = "bold #f9e2af"
 
 [python]
@@ -85,6 +85,12 @@ style = "bold #f5c2e7"
 [nodejs]
 format = "node [ $version]($style)"
 style = "bold #fab387"
+
+[docker_context]
+format = 'on [ $context]($style) '
+style = 'bold #89b4fa'
+disabled = false
+
 
 [fill]
 symbol = " "
