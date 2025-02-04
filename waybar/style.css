@@ -1,8 +1,83 @@
-/* waybar/style.css */
+@define-color base #1E1E2E;
+@define-color mantle #181825;
+@define-color crust #11111B;
+
+@define-color text #CDD6F4;
+@define-color subtext0 #A6ADC8;
+@define-color subtext1 #BAC2DE;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475A;
+@define-color surface2 #585B70;
+
+@define-color overlay0 #6C7086;
+@define-color overlay1 #7F849C;
+@define-color overlay2 #9399B2;
+
+@define-color blue #89B4FA;
+@define-color lavender #B4BEFE;
+@define-color sapphire #74C7EC;
+@define-color sky #89DCEB;
+@define-color teal #94E2D5;
+@define-color green #A6E3A1;
+@define-color yellow #F9E2AF;
+@define-color peach #FAB387;
+@define-color maroon #EBA0AC;
+@define-color red #F38BA8;
+@define-color mauve #CBA6F7;
+@define-color pink #F5C2E7;
+@define-color flamingo #F2CDCD;
+@define-color rosewater #F5E0DC;
+
 * {
-    font-family: "FiraCode Nerd Font", monospace;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 12px;
+    min-height: 0;
 }
-#workspaces {
-    background: #1e2030;
-    color: #c6d0f5;
+
+window#waybar {
+    background: @mantle;
+    border-bottom: 3px solid @blue;
+    color: @text;
+}
+
+#workspaces button {
+    background: @surface0;
+    color: @subtext1;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 3px 8px;
+}
+
+#workspaces button.focused {
+    background: @blue;
+    color: @text;
+}
+
+#cpu, #memory, #network, #battery, #clock {
+    padding: 0 10px;
+    margin: 0 5px;
+    background: @surface0;
+    border-radius: 5px;
+    color: @text;
+}
+
+#cpu {
+    color: @lavender;
+}
+
+#memory {
+    color: @sapphire;
+}
+
+#network {
+    color: @teal;
+}
+
+#battery {
+    color: @yellow;
+}
+
+#clock {
+    color: @mauve;
 }
