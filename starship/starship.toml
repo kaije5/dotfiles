@@ -32,9 +32,14 @@ crust     = "#11111b"
 # Use the Catppuccin Mocha palette
 palette = "catppuccin_mocha"
 
-# Configure the Kubernetes module using a Nerd Font icon ()
+[character]
+success_symbol = "[❯](bold #89dceb)"
+error_symbol = "[](bold #f38ba8)"
+
+
+# Configure the Kubernetes module using a Nerd Font icon ()
 [kubernetes]
-format  = 'on [ $context \($namespace\)]($style) '
+format  = 'on [ $context \($namespace\)]($style) '
 style   = 'bold #89b4fa'
 disabled = false
 
@@ -51,9 +56,9 @@ style  = 'bold #a6e3a1'
 # Configure the Git Status module with Nerd Font icons
 [git_status]
 conflicted = ' '                 # using  for conflicted status
-ahead      = '⇡${count} '         # arrows are acceptable from Nerd Fonts
-behind     = '⇣${count} '
-diverged   = '⇕⇡${ahead_count}⇣${behind_count} '
+ahead      = '${count} '         # arrows are acceptable from Nerd Fonts
+behind     = '${count} '
+diverged   = '${ahead_count}⇣${behind_count} '
 untracked  = ' '                 # using  for untracked files
 stashed    = ' '                 # using  for stashed changes
 modified   = ' '                 # using  for modified files
@@ -66,4 +71,23 @@ style      = 'bold #f9e2af'
 [directory]
 truncation_length = 0
 format            = "[$path]($style) "
-style             = "bold #89dceb"
+style             = "bold #cba6f7"
+
+[cmd_duration]
+min_time = 2000  # in milliseconds
+format = "[⏱  $duration]($style) "
+style = "bold #f9e2af"
+
+[python]
+format = "via [🐍 $version]($style)"
+style = "bold #f5c2e7"
+
+[nodejs]
+format = "node [ $version]($style)"
+style = "bold #fab387"
+
+[fill]
+symbol = " "
+
+[line_break]
+disabled = false
